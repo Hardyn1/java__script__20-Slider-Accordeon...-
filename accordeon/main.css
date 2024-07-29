@@ -1,0 +1,50 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-size: 56px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.accordeon-wrapper {
+    border-radius: 5px;
+    border: 10px solid #444;
+}
+
+.accordeon-btn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 23px;
+}
+
+.active, .accordeon-btn:hover {
+    background-color: #ccc;
+    font-size: 28px;
+    transition: 0.6s ease;
+}
+
+.accordeon-page {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
