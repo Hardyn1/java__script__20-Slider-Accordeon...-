@@ -1,11 +1,11 @@
 let tabs = document.getElementById("tabs"),
     content = document.querySelectorAll(".content");
-// ЕСЛИ HTML КОЛЛЕЦКИЯ ТО ЛУЧШЕ ПРОБЕГАТЬ ЦИКЛОМ FOR OF.
+// ЕСЛИ HTML КОЛЛЕКЦИЯ ТО ЛУЧШЕ ПРОБЕГАТЬ ЦИКЛОМ FOR OF.
 function changeClass(el) {
     // console.log(tabs.children);Выводит коллекцию и можно применить цикл for.
     for(let i = 0; i < tabs.children.length; i ++) {
         tabs.children[i].classList.remove("active"); //classList псевдомассив через метод remove можно удалить класс.
-        // Пр помощи цикла мы удалили у всех класс active.
+        // При помощи цикла мы удалили у всех класс active.
     };
     console.log(el); // <div class="tab-btn active" data-btn="2">2</div>
     el.classList.add("active");
