@@ -10,15 +10,24 @@
     display: none;
 }
 /* если у img есть класс displaySlide мы отобразим его через display block  */
-img.displaySlide{
+
+body[slide="0"] img:nth-child(1),
+body[slide="1"] img:nth-child(2),
+body[slide="2"] img:nth-child(3){
+    display: block;
+};
+
+.dot[clicked="0"] span:nth-child(1),
+.dot[clicked="1"] span:nth-child(2),
+.dot[clicked="2"] span:nth-child(3){
+    background-color: red;
+}
+
+/* img.displaySlide{
     display: block;
     animation-name: fade;
     animation-duration: 5s;
-}
-
-img.red {
-    background-color: red;
-}
+} */
 
 /* all buttons in slider */
 .slider button { 
@@ -70,7 +79,4 @@ img.red {
 }
 .dot.clicked {
     background: red;
-}
-.dot.hover:hover{
-    transform: scale(2s);
 }
